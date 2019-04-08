@@ -1,0 +1,60 @@
+{
+  "id": "form2",
+  "title": "Let's figure out what you need",
+  "fieldsCollections": [
+    {
+      "id": "1",
+      "type": "checkboxGroup",
+      "label": "what would you like your life insurance to do? Check as many as you'd like.",
+      "selectedCheckBoxOption": [],
+      "checkboxOptions": [
+        {
+          "id": "1",
+          "label": "Help my dependants by replacing my income",
+          "value": "Help my dependants by replacing my income"
+        },
+        {
+          "id": "2",
+          "label": "Pay of my debt",
+          "value": "Pay of my debt"
+        },
+        {
+          "id": "3",
+          "label": "Help my kids pay for colleage",
+          "value": "Help my kids pay for colleage"
+        },
+        {
+          "id": "4",
+          "label": "Pay for my funeral",
+          "value": "Pay for my funeral"
+        },
+        {
+          "id": "5",
+          "label": "Set aside additional money",
+          "value": "Set aside additional money"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "type": "inputText",
+      "label": "What's your annual income?",
+      "inputValue": "",
+      "placeholder": ""
+    },
+    {
+      "id": "3",
+      "type": "inputText",
+      "label": "How many years do you want life insurance to replace your income?",
+      "inputValue": "",
+      "placeholder": ""
+    },
+    {
+      "id": "4",
+      "type": "inputText",
+      "label": "How much do you owe on morgages?",
+      "inputValue": "",
+      "placeholder": "$0"
+    }
+  ]
+}

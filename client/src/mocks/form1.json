@@ -1,0 +1,79 @@
+{
+  "id": "form1",
+  "title": "Tell us what you're looking",
+  "fieldsCollections": [
+    {
+      "id": "1",
+      "type": "inputText",
+      "label": "How much coverage do you need?",
+      "inputValue": "",
+      "placeholder": "$"
+    },
+    {
+      "id": "2",
+      "type": "radioGroup",
+      "label": "how long should you coverage last?",
+      "selectedOption": "",
+      "choices": [
+        {
+          "id": "1",
+          "label": "10 years",
+          "value": "10 years"
+        },
+        {
+          "id": "2",
+          "label": "20 years",
+          "value": "20 years"
+        },
+        {
+          "id": "3",
+          "label": "30 years",
+          "value": "30 years"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "type": "radioGroup",
+      "label": "What's your birth gender?",
+      "selectedOption": "",
+      "choices": [
+        {
+          "id": "1",
+          "label": "Female",
+          "value": "Female"
+        },
+        {
+          "id": "2",
+          "label": "Male",
+          "value": "Male"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "type": "inputText",
+      "label": "How old are you?",
+      "inputValue": "",
+      "placeholder": ""
+    },
+    {
+      "id": "5",
+      "type": "radioGroup",
+      "label": "Has anyone in your immediate family been diagnosed with a heart condition, cancer, kidney disease or diabetes before age 70?",
+      "selectedOption": "",
+      "choices": [
+        {
+          "id": "1",
+          "label": "Yes",
+          "value": "Yes"
+        },
+        {
+          "id": "2",
+          "label": "No",
+          "value": "No"
+        }
+      ]
+    }
+  ]
+}
