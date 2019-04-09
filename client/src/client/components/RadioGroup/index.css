@@ -1,0 +1,44 @@
+.ctm-radio-group {
+  display: inline-flex;
+  border: 1px solid black;
+  overflow: hidden;
+  border-radius: 4rem;
+}
+
+.ctm-btn {
+  padding: 10px 34px;
+  margin: 0;
+  border: solid 1px black;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+.ctm-btn input[type="radio"] {
+  display: none;
+}
+
+.ctm-radio-group > .ctm-btn {
+  border-radius: 0;
+  border: none;
+  border-right: 1px solid black;
+}
+.ctm-radio-group > .ctm-btn:last-child {
+  border-right: none;
+}
+
+.ctm-btn-active {
+  background-color: #beb9b9;
+}
+
+.radio-group {
+  display: grid;
+}
+
+.radio-btn {
+  margin: 2px 10px;
+}
+
+.radio-btn input[type="radio"] {
+  margin-right: 10px;
+}
