@@ -1,4 +1,8 @@
 
+.form-container {
+  margin-left: 12rem;
+}
+
 .form-btn {
   background-color: white;
   border: 1px solid;
@@ -13,6 +17,6 @@
   border-radius: 2rem;
 }
 
-.btn-active {
-  background-color: #beb9b9;
+.form-fields {
+  margin: 4rem 0rem;
 }

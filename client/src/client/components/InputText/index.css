@@ -1,0 +1,19 @@
+.ctm-text-input {
+  display: grid;
+}
+
+.text-input {
+  padding: 20px 4px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+  font-size: 16px;
+}
+
+.text-amount-input {
+  width: 40%;
+}
+
+.text-year-input {
+  width: 20%;
+}

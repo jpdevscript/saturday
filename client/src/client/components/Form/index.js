@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import InputText from '../InputText';
 import RadioGroup from '../RadioGroup';
 import CheckboxGroup from '../CheckboxGroup';
@@ -7,7 +8,6 @@ import './index.css';
 
 
 class Form extends PureComponent {
-
 
   componentDidMount() {
     let { formId } = this.props.match.params;
@@ -51,9 +51,9 @@ class Form extends PureComponent {
     try {
       return fields.map(field => {
         return (
-          <React.Fragment key= {`fr${field.id}`} >
+          <div key= {`fr${field.id}`} className="form-fields" >
             {this.renderField(field)}
-          </React.Fragment>
+          </div>
         )
       })
     } catch(error) {
@@ -64,7 +64,7 @@ class Form extends PureComponent {
   render() {
     const _formData = this.props.formData;
     return (
-      <form className="col-md-6" htmlFor= {_formData.id} onSubmit={(e)=>{this.onSubmit(e, _formData.id)}}>
+      <form className="form-container col-md-4" htmlFor= {_formData.id} onSubmit={(e)=>{this.onSubmit(e, _formData.id)}}>
         <h2>{_formData.title}</h2>
         {this.renderForm(_formData.fieldsCollections)}
         <button className= "form-btn" type="submit">Continue</button>
@@ -72,5 +72,9 @@ class Form extends PureComponent {
     );
   }
 }
+
+Form.propTypes = {
+  formData: PropTypes.object
+};
 
 export default Form;
