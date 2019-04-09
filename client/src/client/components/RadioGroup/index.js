@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import './index.css';
 
 function RadioGroup(props) {
 
@@ -17,38 +19,52 @@ function RadioGroup(props) {
   }
 
   const renderChoices = (choices) => {
+
     const length = choices.length;
     const selectedOption = props.fieldData.selectedOption;
-    let divClass = 'radio', labelClass = 'form-label', dataToggle = 'radio';
+    let divClass = 'radio-group', labelClass = 'radio-btn';
     if (length === 2) {
-      divClass = 'btn-group';
-      labelClass = 'form-btn btn';
-      dataToggle = 'buttons';
+      divClass = 'ctm-radio-group';
+      labelClass = 'ctm-btn';
     }
 
-    return choices.map(choice => {
-      let activeClass = (selectedOption === choice.value && length === 2) ? 'btn-active' : '';
-      return (
-        <div className={divClass} data-toggle={dataToggle} key= {choice.id}>
-            <label className={`${activeClass} ${labelClass}`}>
-              {renderChoice(choice)}
-              {choice.label}
-            </label>
-        </div>
-      )
-    })
+    return (
+      <div className={divClass} >
+          {choices.map(choice => {
+            let activeClass = (selectedOption === choice.value && length === 2) ? 'ctm-btn-active' : '';
+            return (
+              <label className={`${activeClass} ${labelClass}`}  key= {choice.id}>
+
+                {renderChoice(choice)}
+                {choice.label}
+              </label>
+            )
+          })}
+      </div>
+    )
   }
 
 
   const radioData = props.fieldData;
   return (
-    <div className="form-group">
+    <div>
       <label htmlFor={radioData.label} className="form-label">{radioData.label}</label>
       <div>
         {renderChoices(radioData.choices)}
       </div>
     </div>
   )
+}
+
+RadioGroup.propTypes = {
+  fieldData: PropTypes.shape({
+    id: PropTypes.string,
+    type: PropTypes.string,
+    subType: PropTypes.string,
+    label: PropTypes.string,
+    inputValue: PropTypes.string,
+    choices: PropTypes.array
+  })
 }
 
 export default RadioGroup;
