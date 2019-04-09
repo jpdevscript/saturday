@@ -6,6 +6,7 @@
       "id": "1",
       "type": "inputText",
       "label": "How much coverage do you need?",
+      "subType": "amount",
       "inputValue": "",
       "placeholder": "$"
     },
@@ -54,6 +55,7 @@
       "id": "4",
       "type": "inputText",
       "label": "How old are you?",
+      "subType": "year",
       "inputValue": "",
       "placeholder": ""
     },

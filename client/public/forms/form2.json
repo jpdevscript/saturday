@@ -39,6 +39,7 @@
       "id": "2",
       "type": "inputText",
       "label": "What's your annual income?",
+      "subType": "amount",
       "inputValue": "",
       "placeholder": ""
     },
@@ -46,6 +47,8 @@
       "id": "3",
       "type": "inputText",
       "label": "How many years do you want life insurance to replace your income?",
+      "subType": "year",
+      "subType": "year",
       "inputValue": "",
       "placeholder": ""
     },
@@ -53,6 +56,8 @@
       "id": "4",
       "type": "inputText",
       "label": "How much do you owe on morgages?",
+      "subType": "amount",
+      "subType": "amount",
       "inputValue": "",
       "placeholder": "$0"
     }
