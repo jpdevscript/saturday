@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 function CheckboxGroup(props) {
@@ -39,6 +40,16 @@ function CheckboxGroup(props) {
       {renderCheckboxOptions(checkboxData.checkboxOptions)}
     </div>
   )
+}
+
+CheckboxGroup.propTypes = {
+  fieldData: PropTypes.shape({
+    id: PropTypes.string,
+    type: PropTypes.string,
+    label: PropTypes.string,
+    checkboxOptions: PropTypes.array,
+    selectedCheckBoxOption: PropTypes.array
+  })
 }
 
 export default CheckboxGroup;
